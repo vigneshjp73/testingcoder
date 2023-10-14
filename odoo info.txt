@@ -97,3 +97,4 @@ SELECT * FROM public.ir_database;
 -> Odoo not compatible with Python 3.9
 
 "..\python odoo-bin scaffold D:\odooo\addons_from_github\Odoo_examples-main\Odoo_examples-main\my_addons\fish"
+shanu's project
