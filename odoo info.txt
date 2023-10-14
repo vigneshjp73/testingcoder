@@ -1,0 +1,99 @@
+odoo master password : 6vvd-vb2a-bsqw / muvu-6w9x-55kq
+
+username 			: postgres
+postgresql password : Postgresql@123
+port  				: 5432
+operating system username : Welcome
+system user password 	: 123456
+
+
+dependencies :
+	> Nodejs
+	> vs++ with build development in C++
+	> pycharm CE
+	
+	
+Pycharm:
+	Project name : pycharmPython
+	open create project and set location as odoo project folder then cick create project
+	open odoo in terminal
+	run this command "pip install setuptools wheel"
+	
+	
+------------------------------------------------
+Current Postgress password : 123
+-> server > postgreSQL 16 > odoo > schema > public > tables 
+-> open odoo S/W after start pgadmin server with password (123)
+	Url : http://localhost:8069/web
+	
+-> Odoo url : https://www.odoo.com/app/ecommerce
+
+-> ODOO : On-Demand Open Object
+
+-> Odoo version 16.0-20230927
+
+-> git clone https://www.github.com/odoo/odoo --depth 1 --branch 16.0 --single-branch .
+
+-> localhost odoo email : Laxcyma@santhila.co
+
+-> odoo S/W stopped once we stop => (
+1.open server in windows search 
+2. find odoo s/w 
+3. Right click and stop the running process )
+
+-> Start and stop postgreSQL
+Go to PostgreSQL installed files > open cmd > pg_ctl -D "D:\Program Files\PostgreSQL\9.6\data" start
+											> pg_ctl -D "D:\Program Files\PostgreSQL\9.6\data" stop
+
+-> backup postgreSql  :
+
+Method 1:
+1. Make sure your postgresql download path is set into environment variable
+2) open cmd where you want to download and paste the below command
+If you want to export the database in a custom format that includes both data and schema information, you can use the -Fc flag: "pg_dump -U postgres -d odoo -f bk -Fc"
+pg_dump -U Username -d database name -f name of the output file = "pg_dump -U postgres -d odoo -f output_file"
+
+Method 2: 
+
+1. set binary path 
+	1.1 In postgres , Files->Preferance->paths->Binary paths-> In PostgreSQL Binary Path tab Set file path where the postgreSql installed (eg. D:\Program Files\PostgreSQL\16\bin) -> save
+2. Select db and right click then choose backup
+3. Filename : file path where we want to create
+   Format : UTF8
+   Rolename : postgres
+   Data options tab	
+		Type of objects
+		disable blobs and enable only schema then click backup
+
+-> can create an application using Odoo software. Odoo is an open-source enterprise resource planning (ERP) and customer relationship management (CRM) software suite. It is written in Python and uses the PostgreSQL database.
+
+-> How to create application using odoo software 
+ https://www.odoo.com/trial  
+ only for 15 days free trail
+ Testing site : https://texting.odoo.com/
+ need to activate
+ 
+-> Odoo python Applications in my sys : D:\Odoo\server\odoo\addons
+
+Ecommerce: 
+------------
+sale: This addon provides the core functionality for Odoo eCommerce, such as product management, order management, and payments.
+website_sale: This addon provides the functionality for creating and managing an Odoo eCommerce website.
+payment: This addon provides the functionality for accepting payments through Odoo.
+delivery: This addon provides the functionality for shipping products to customers.
+rating: This addon provides the functionality for customers to rate and review products.
+
+
+-> odoo sample db email	:  laxcyma@santhila.co
+-> 			 pwd	:  Laxcyma@000
+
+
+-> where the db creation details stored
+ 
+
+psql -U your_postgresql_username -d your_odoo_database_name - psql -U postgres -d odoo
+SELECT * FROM public.ir_database;
+
+-> Odoo not compatible with Python 3.9
+
+"..\python odoo-bin scaffold D:\odooo\addons_from_github\Odoo_examples-main\Odoo_examples-main\my_addons\fish"
